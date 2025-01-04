@@ -1,0 +1,53 @@
+# Node.js modules (for both client and server)
+node_modules/
+
+# Logs (globally)
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output for server-app
+server-app/.dist/
+server-app/dist/
+
+# Build output for client-app (if exists)
+client-app/dist/
+
+# Environment variables (globally)
+.env
+.env.*
+
+# TypeScript cache (globally)
+*.tsbuildinfo
+
+# Configuration files (server-app-specific)
+server-app/tsconfig.json  # TypeScript configuration (exclude if managed via environment-specific config)
+server-app/nodemon.json   # Nodemon configuration (exclude if it's local or environment-specific)
+nodemon.json
+tsconfig.json
+
+# Coverage files (globally, e.g., from Jest)
+coverage/
+
+# OS files (globally)
+.DS_Store
+Thumbs.db
+
+# Temporary files (globally)
+*.tmp
+*.swp
+
+# IDE settings (globally)
+.vscode/
+.idea/
+
+# Debug files (globally)
+*.pid
+*.seed
+*.pid.lock
+
+# Docker (globally)
+docker-compose.override.yml
+.env.local
